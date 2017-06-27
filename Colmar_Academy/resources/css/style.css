@@ -1,0 +1,559 @@
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v10/eWRmKHdPNWGn_iFyeEYja_bbaTZmtPDRvp9xUdyvPg4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v10/IVeH6A3MiFyaSEiudUMXEweOulFbQKHxPa89BaxZzA0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: Montserrat, sans-serif;
+  background-color: #EEEEEE;
+}
+
+/* header */
+
+.top-container{
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+}
+
+header .container{
+  width: 1024px;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#liens-small,
+#liens-small-blue,
+#small-screen,
+#learning-small{
+  display: none;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 24px;
+  }
+
+.logo h1{
+  font-weight: 700;
+  }
+
+.logo span{
+  font-weight: 400;
+  }
+
+.liens{
+  margin-right: 24px;
+  text-transform: capitalize;
+  }
+
+.liens a{
+  padding-left: 16px;
+  color: rgba(57, 62, 70, 0.75);
+  font-size: 0.85rem;
+  }
+
+.liens a:hover{
+  color: rgba(0, 173, 181, 0.75);
+}
+
+/* main */
+
+/* section 1 */
+
+.container{
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+#learn{
+  margin-top: 64px;
+}
+
+.photo-banner{
+  width: 60%;
+  height: 400px;
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texte-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 400px;
+  margin-left: 40px;
+}
+
+.texte-banner h1{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+
+.texte-banner p{
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.texte-banner p,
+.texte-banner h1{
+  color: rgb(57, 62, 70);
+}
+
+
+.texte-banner h3{
+  height: 32px;
+  background: linear-gradient(to bottom, rgb(0,173,181), rgb(3,140,146));
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.texte-banner h3:hover{
+  background: linear-gradient(to bottom, rgb(200,200,200), rgb(150,150,150));
+}
+
+
+/* section 2a */
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  color: rgb(57, 62, 70);
+}
+
+.photo-practicing{
+  height: 285px;
+  background-image: url(../images/information-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 32px;
+}
+
+.texte-main h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-bottom: 24px;
+}
+
+.texte-main p,
+.texte-thumbnails p,
+.text-cours p,
+#end p,
+#end a
+{
+  font-weight: 200;
+  font-size: .8rem;
+  padding-bottom: 16px;
+}
+
+.texte-main h5{
+  font-weight: 300;
+  font-size: .8rem;
+
+}
+
+/* section 2b */
+
+.section-thumbnails {
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+  color: rgb(57, 62, 70);
+  margin-left: 24px;
+  padding-left: 16px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+
+.thumbnails{
+  width: 35%;
+  height: 125px;
+}
+
+#one{
+  background-image: url(../images/information-orientation.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#two{
+  background-image: url(../images/information-campus.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#three{
+  background-image: url(../images/information-guest-lecture.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texte-thumbnails{
+  width: 60%;
+}
+
+.texte-thumbnails a{
+  font-weight: 400;
+  font-size: .8rem;
+  color: rgb(0, 173, 181);
+}
+
+.texte-thumbnails a:hover{
+  color: rgba(57, 62, 70, 0.75);
+}
+
+h4{
+  color: rgba(57, 62, 70, 0.85);
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.back{
+  background-color: white;
+}
+
+
+/*section 4*/
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 16px 0px 16px;
+}
+
+.cours{
+  width: 25%;
+  background-color: white;
+  height: 310px;
+  margin: 0px 16px;
+}
+
+.cours:nth-child(1n+4){
+  margin-top: 16px;
+}
+
+.conteneur{
+  height: 168px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#software{
+  background-image: url(../images/course-software.jpg);
+}
+#software2{
+  background-image: url(../images/course-computer-art.jpg);
+}
+#software3{
+  background-image: url(../images/course-design.jpg);
+}
+#software4{
+  background-image: url(../images/course-data.jpg);
+}
+#software5{
+  background-image: url(../images/course-business.jpg);
+}
+#software6{
+  background-image: url(../images/course-marketing.jpg);
+}
+
+.text-cours{
+  padding: 16px;
+}
+
+#learning, #exhibit{
+  display: flex;
+  flex-direction: column;
+}
+
+#learning h2, #exhibit h2{
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgba(57, 62, 70, 0.85);
+}
+
+#thesis video{
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.hori{
+  display: flex;
+}
+
+#four{
+  background-image: url(../images/thesis-fisma.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#five {
+  background-image: url(../images/thesis-now-and-then.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*footer*/
+
+#end{
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+}
+
+#end a{
+  padding-left: 10px;
+  color: white;
+}
+
+#end a:hover{
+  opacity: 0.5;
+}
+
+.total{
+background: linear-gradient(to bottom, rgb(0,173,181), rgb(3,140,146));
+}
+
+
+/*--------------------------------------------------------------------*/
+
+/*media queries mobile section*/
+
+@media only screen and (max-width: 480px){
+
+body{
+    max-width: 480px;
+    }
+
+#liens-small{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 0px 24px;
+}
+
+#liens-small img:hover{
+  opacity: 0.5;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+#small-screen{
+  display: block;
+  margin-top: 64px;
+  width: 100%;
+  height: 180px;
+  background-image: url(../images/banner.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texte-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  padding: 32px 16px;
+}
+
+.texte-banner h1{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-bottom: 2rem;
+}
+
+.texte-banner p{
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+
+.section-thumbnails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: rgb(57, 62, 70);
+  margin-left: 0px;
+  padding: 16px 16px 32px 16px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+.thumbnails{
+  width: 100%;
+  height: 170px;
+}
+
+#one{
+  background-image: url(../images/information-orientation-mobile.jpg);
+}
+
+#two{
+  background-image: url(../images/information-campus-mobile.jpg);
+}
+
+#three{
+  background-image: url(../images/information-guest-lecture-mobile.jpg);
+}
+
+.texte-thumbnails{
+  width: 100%;
+  padding: 16px;
+}
+
+#learning h2{
+  margin: 32px 0px 16px 0px;
+}
+
+#exhibit h2{
+  margin: 32px 0px;
+}
+
+#learning-small{
+  display: flex;
+  width: 100%;
+  padding: 16px;
+}
+
+#learning-small h4{
+ color: white;
+ padding: 16px 0px 16px 16px;
+ font-weight: 400;
+ margin-bottom: 8px;
+ height: 52px;
+ background: linear-gradient(to bottom, rgb(0,173,181), rgb(3,140,146));
+ font-size: 1rem;
+}
+
+#learning-small h4:hover{
+  background: linear-gradient(to bottom, rgb(200,200,200), rgb(150,150,150));
+
+}
+
+#thesis{
+  display: flex;
+  width: 100%;
+}
+
+#end{
+  align-items: flex-start;
+  height: 52px;
+  padding: 16px;
+}
+
+#end p{
+}
+
+/*hide elements*/
+.photo-practicing,
+.liens,
+.logo h1,
+.logo img,
+.texte-main,
+.cours,
+#four,
+#five,
+#hide,
+.privacy,
+.section-column,
+.container .photo-banner{
+    display: none;
+    }
+
+
+
+
+}
